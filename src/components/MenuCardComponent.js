@@ -13,7 +13,7 @@ export default function MenuCardComponent(props) {
         <View style={style.menu_card}>
             <Image
                 style={style.menu_image}
-                source={{uri: 'data:image/png;base64,' + menu.image}}/>
+                source={{uri: "data:image/png;base64," + menu.image}}/>
             <View style={style.menu_details}>
                 <Text>
                     {menu.name}
