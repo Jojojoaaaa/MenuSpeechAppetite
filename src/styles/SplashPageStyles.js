@@ -9,6 +9,11 @@ export default  style = StyleSheet.create({
         flex:1,
     },
 
+    background:{
+        position: 'absolute',
+
+    },
+
     viewStyleOne: {
         flex: 0.5,
         justifyContent: 'flex-start',
@@ -30,7 +35,7 @@ export default  style = StyleSheet.create({
     },
 
     viewStyleFour:{
-        //backgroundColor: 'yellow',
+        backgroundColor: 'yellow',
         flex: 1.5,
         alignItems:'center', 
     },

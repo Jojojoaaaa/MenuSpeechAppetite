@@ -92,15 +92,18 @@ class MenuContainer extends Component {
 
     return (
       <View style={style.container}>
+      <View style={style.body}>
         <MenuHeaderComponent
           back={back}/>
-        <View style={style.body}>
-          <ScrollView style={style.categories_container}>
+        <View style={style.content}>
+          <ScrollView 
+          style={style.categories_container}>
             {cat_card}
           </ScrollView>
-          <ScrollView style={style.menu_container}>
+          <View style={style.menu_container}>
             {menu_cards}
-          </ScrollView>
+          </View>
+        </View>
         </View>
       </View>
     );

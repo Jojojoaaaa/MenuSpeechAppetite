@@ -14,6 +14,7 @@ export default function CategoryCardComponent(props) {
         retrieveMenu
     } = props;
     return (
+        <View style={style.category_card}>
         <TouchableOpacity
             style={style.category_card}
             onPress={()=>retrieveMenu(category.id)}>
@@ -22,5 +23,6 @@ export default function CategoryCardComponent(props) {
                 source={{uri: "data:image/png;base64," + category.image}}/>
             <Text>{category.name}</Text>
         </TouchableOpacity>
+        </View>
     );
 }

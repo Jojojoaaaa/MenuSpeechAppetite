@@ -13,6 +13,9 @@ import {
 
 import style from '../styles/SplashPageStyles';
 
+import logo from '../assets/logo.png';
+import bg from '../assets/background.png';
+import add from '../assets/btnAdd.png';
 import settings from '../assets/modal/settings.png';
 import warning from '../assets/modal/warning.png';
 import btn_change from '../assets/modal/btnChange.png';
@@ -29,7 +32,12 @@ export default function SplashPageComponent(props) {
     
     return (
         <View style={style.container}>
+        <Image 
+            style={style.background}
+            source={bg}></Image>
             <View style={style.body}> 
+            
+            <View style={style.viewStyleOne}>
                 <TouchableOpacity 
                     onPress={() => {openModal();}}>
                     <Image
@@ -37,10 +45,21 @@ export default function SplashPageComponent(props) {
                         source = {settings}>
                     </Image>
                 </TouchableOpacity>
-                <Button
-                    onPress={() => handleOpenMenu()}
-                    title='Open Menu'/>
-                    
+            </View> 
+            <View style={style.viewStyleTwo}>
+                <Image source={logo}></Image>
+            </View>
+            <View style={style.viewStyleThree}>
+            <TouchableOpacity 
+                    onPress={() => {handleOpenMenu();}}>
+                    <Image
+                        source = {add}>
+                    </Image>
+                </TouchableOpacity>
+                
+            </View>
+
+            
                 <Modal
                     visible={modal_visible}
                     animationType={'fade'}
