@@ -53,25 +53,53 @@ export default  style = StyleSheet.create({
         justifyContent: 'center'    
     }, 
     menu_container: {
-        flex: 5
-        // backgroundColor: 'green'
+        flex: 5,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        backgroundColor: 'white'
     },
     menu_card: {
-        height: '50%',
+        height: '27%',
         width: '45%',
         display:'flex',
         flexDirection: 'row',
-        backgroundColor: 'yellow',
+        borderRadius: 5,
+        backgroundColor: '#FFF3E1',
         margin: '2%'
       
     },
     menu_image: {
-        width: '30%',
-        height: '100%'
+        flex:1,
+        marginLeft: '3%',
+        marginRight: '3%',
+        marginTop: '3%',
+       marginBottom: '6%'
     },
     menu_details: {
-        width: '70%',
-        height: '100%'
+        flex: 2,
+        flexDirection: 'column',
+        marginLeft: '3%',
+        marginRight: '3%',
+        marginTop: '3%',
+       marginBottom: '6%'
+    },
+
+    detail_name:{
+        flex: 1,
+        
+    },
+
+    detail_name:{
+        flex:1
+    },
+     text_title:{
+        fontSize: 18,
+        fontWeight: 'bold'
+     },
+
+    detail_status:{
+        flex: 1,
+        color: 'green'
     },
     category_card: {
         justifyContent: 'center',

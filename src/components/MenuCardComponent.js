@@ -15,11 +15,17 @@ export default function MenuCardComponent(props) {
                 style={style.menu_image}
                 source={{uri: "data:image/png;base64," + menu.image}}/>
             <View style={style.menu_details}>
-                <Text>
-                    {menu.name}
+                <View style={style.detail_name}>
+                <Text style={style.text_title}>{menu.name}</Text>
+                <Text>Php {menu.price}</Text>
+                    
+                    
+                </View>
+                <Text style={style.detail_desc}>
                     {menu.description}
-                    {menu.status}
-                    {menu.price}
+                </Text>
+                <Text style={style.detail_status}>
+                    {menu.status}  
                 </Text>
             </View>
         </View>
